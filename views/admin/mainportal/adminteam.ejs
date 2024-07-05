@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/isha/adminteam.css">
+    <script src="https://kit.fontawesome.com/42d50a4c3d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <div class="profile">
+                <i class="fa-solid fa-circle-user fa-5x"></i><br><br><br>
+                <span class="user"><%=admin%></span>
+            </div>
+            <a class="links" href="/admin"><i class="fa-solid fa-pen"></i> teams</a><br><br><br>
+            <a class="links" href="/createtest/info"><i class="fa-solid fa-pen"></i> create test</a><br><br><br>
+            <a class="links" href="/admin/assignment"><i class="fa-solid fa-pen"></i> Create assignment</a><br><br><br>
+            <a class="links" href="/admin/viewresult"><i class="fa-solid fa-pen"></i> View result</a>
+        </div>
+        <div class="item2">
+            <div class="teamsicn scrolling">
+
+                <% render.forEach(function(item){ %>
+                <div class="teamNo">
+                    <span class="subName"><%=item.teamname%></span><br><br>
+                    <a href="/admin/teamid/<%=item.team_id%>" class="btn"><%=item.teamname[0].toUpperCase()%></a>
+                </div>
+                <% }); %>
+
+
+                <button class="new"><a href="/admin/createteam">+</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
