@@ -16,9 +16,6 @@ Eazylearn is an online education platform that connects teachers and students. T
 - APIs
 - Socket.io
 
-## Demo Link
-<a href="https://youtu.be/o4yz8zHC_ik" target="_blank">https://youtu.be/o4yz8zHC_ik</a>
-
 ## Getting Started
 1. Clone the repository:
 ```bash
@@ -39,9 +36,4 @@ npm start
 ```bash
 http://localhost:3000/
 ```
-
-## Contributors
-* [Sambhav Jain](https://github.com/samjain233)
-* [Isha Vishwakarma](https://github.com/ishavishwakarma29)
-* [Aman Singh](https://github.com/amansingh0811)
 # EAZY-LEARN
